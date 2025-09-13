@@ -275,7 +275,7 @@
       </div>
       <div class="cta-actions">
         <button class="btn-primary" onclick="openContact()">Contact Us ✉️</button>
-        <button class="btn-outline" onclick="window.open('mailto:yashu78g@gmail.com?subject=Yash%20Ventures%20Enquiry','_self')">Email Us</button>
+        <button class="btn-outline" onclick="window.open('mailto:official.yashventures@gmail.com?subject=Yash%20Ventures%20Enquiry','_self')">Email Us</button>
       </div>
     </section>
 
@@ -314,7 +314,7 @@
     // contact CTA
     function openContact(){
       // mailto fallback
-      const email = 'yashu78g@gmail.com';
+      const email = 'official.yashventures@gmail.com';
       const subject = encodeURIComponent('Yash Ventures - Inquiry');
       const body = encodeURIComponent('Hi Yash,\n\nI would like to discuss... (brief message)\n\nRegards,\n');
       window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
