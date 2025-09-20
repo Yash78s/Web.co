@@ -696,4 +696,1012 @@
         }
 
         .social-instagram:hover {
-      
+            box-shadow: 0 12px 30px rgba(228, 64, 95, 0.4);
+            border-color: rgba(228, 64, 95, 0.5);
+        }
+
+        .social-discord {
+            background: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+            color: white;
+        }
+
+        .social-discord:hover {
+            box-shadow: 0 12px 30px rgba(88, 101, 242, 0.4);
+            border-color: rgba(88, 101, 242, 0.5);
+        }
+
+        .social-website {
+            background: var(--gradient-accent);
+            color: white;
+        }
+
+        .social-website:hover {
+            box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        /* Social Media Section */
+        .social-section {
+            padding: 80px 0;
+            background: var(--primary-dark);
+            position: relative;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .social-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-overlay);
+            opacity: 0.5;
+        }
+
+        .social-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .social-title {
+            font-size: 36px;
+            font-weight: 800;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .social-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        /* Enhanced Contact Buttons with Social Integration */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .contact-method {
+            background: var(--secondary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-method-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .contact-method h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .contact-method p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        /* Professional Social Icons with Real Logos */
+        .social-icon {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover .social-icon {
+            transform: scale(1.1);
+        }
+
+        /* Remove emoji-based icons */
+        .social-icon-youtube::before,
+        .social-icon-telegram::before,
+        .social-icon-instagram::before,
+        .social-icon-discord::before,
+        .social-icon-website::before {
+            content: none;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-overlay);
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px 40px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-width: 220px;
+        }
+
+        .contact-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.8s ease;
+        }
+
+        .contact-btn:hover::before {
+            left: 100%;
+        }
+
+        .contact-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .contact-btn:hover::after {
+            opacity: 0.8;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 50%, #075E54 100%);
+            color: white;
+            border: 2px solid rgba(37, 211, 102, 0.3);
+            box-shadow: 
+                0 8px 32px rgba(37, 211, 102, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 
+                0 12px 40px rgba(37, 211, 102, 0.5),
+                0 0 0 1px rgba(37, 211, 102, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-btn:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .email-btn {
+            background: linear-gradient(135deg, #EA4335 0%, #D33B2C 50%, #B52D20 100%);
+            color: white;
+            border: 2px solid rgba(234, 67, 53, 0.3);
+            box-shadow: 
+                0 8px 32px rgba(234, 67, 53, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .email-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 
+                0 12px 40px rgba(234, 67, 53, 0.5),
+                0 0 0 1px rgba(234, 67, 53, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(234, 67, 53, 0.6);
+        }
+
+        .email-btn:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .contact-btn-icon {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-btn:hover .contact-btn-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-blue);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 32px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                text-align: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 140px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .course-card {
+                padding: 32px;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons,
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course-card.featured {
+                transform: none;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate {
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">YASH VENTURES</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-icons">
+            <div class="floating-icon">📊</div>
+            <div class="floating-icon">💎</div>
+            <div class="floating-icon">🚀</div>
+            <div class="floating-icon">⚡</div>
+            <div class="floating-icon">📈</div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge reveal-down">
+                    <span class="pulse-icon">⚡</span>
+                    Professional Trading Solutions
+                </div>
+                <h1 class="typing-text">Master Professional Trading & Investment Strategies</h1>
+                <p class="hero-subtitle reveal-up">Elevate your trading experience with advanced strategies, comprehensive market insights, and professional guidance designed for serious traders and investors</p>
+                <div class="cta-buttons">
+                    <a href="#courses" class="btn btn-primary glow-on-hover">
+                        <span class="icon-rotate">📊</span>
+                        Explore Courses
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>💬</span>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>🎯</span>
+                    Premium Training Programs
+                </div>
+                <h2 class="section-title">Professional Trading Courses</h2>
+                <p class="section-subtitle">Comprehensive solutions designed to transform your trading journey from beginner to professional level</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Beginner Course -->
+                <div class="course-card animate reveal-left">
+                    <div class="icon pulse-icon">📈</div>
+                    <h3 class="course-title">Foundation Trader</h3>
+                    <p class="course-description">Master the fundamentals of professional trading with comprehensive market analysis, risk management strategies, and proven trading methodologies.</p>
+                    <div class="course-price">₹9,999</div>
+                    <div class="course-period">One-time Investment</div>
+                    <ul class="course-features">
+                        <li>Market Analysis & Technical Fundamentals</li>
+                        <li>Professional Risk Management Systems</li>
+                        <li>Real-time Market Session Training</li>
+                        <li>Paper Trading & Strategy Development</li>
+                        <li>Live Trading Room Access</li>
+                        <li>3 Months Professional Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary glow-on-hover">
+                        <span>🚀</span>
+                        Start Learning
+                    </a>
+                </div>
+
+                <!-- Advanced Course -->
+                <div class="course-card featured animate reveal-up">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="icon pulse-icon">💎</div>
+                    <h3 class="course-title">Advanced Professional</h3>
+                    <p class="course-description">Advanced institutional-level strategies with sophisticated portfolio management, market psychology, and algorithmic trading foundations.</p>
+                    <div class="course-price">₹19,999</div>
+                    <div class="course-period">One-time Investment</div>
+                    <ul class="course-features">
+                        <li>Advanced Chart Patterns & Market Structure</li>
+                        <li>Options & Derivatives Trading Mastery</li>
+                        <li>Professional Portfolio Management</li>
+                        <li>Market Psychology & Behavioral Finance</li>
+                        <li>Algorithmic Trading Introduction</li>
+                        <li>6 Months Premium Support & Mentorship</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary glow-on-hover">
+                        <span>⭐</span>
+                        Join Elite Program
+                    </a>
+                </div>
+
+                <!-- Pro Course -->
+                <div class="course-card animate reveal-right">
+                    <div class="icon pulse-icon">🏆</div>
+                    <h3 class="course-title">Elite Investor</h3>
+                    <p class="course-description">Master institutional-grade strategies with advanced algorithmic systems, comprehensive wealth management, and exclusive professional tools.</p>
+                    <div class="course-price">₹34,999</div>
+                    <div class="course-period">One-time Investment</div>
+                    <ul class="course-features">
+                        <li>Institutional Algorithmic Trading Systems</li>
+                        <li>Advanced Quantitative Analysis Methods</li>
+                        <li>Professional Wealth Management Strategies</li>
+                        <li>Exclusive 1-on-1 Expert Mentorship</li>
+                        <li>Premium Trading Tools & Software Access</li>
+                        <li>12 Months VIP Support & Community</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary glow-on-hover">
+                        <span>👑</span>
+                        Become Elite
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate">
+                    <div class="section-badge">
+                        <span>🎯</span>
+                        Why Choose Us
+                    </div>
+                    <h2>Professional Trading Excellence</h2>
+                    <p>With extensive experience in global financial markets, we deliver institutional-grade trading education that combines advanced theoretical knowledge with practical, real-world application.</p>
+                    <p>Our sophisticated methodologies and proven strategies have empowered thousands of students to achieve consistent profitability and professional-level trading expertise.</p>
+                    <p>Join our exclusive community of elite traders and investors who have mastered the art of systematic, profitable trading through our comprehensive, results-driven educational programs.</p>
+                </div>
+                <div class="stats-grid animate">
+                    <div class="stat-card">
+                        <div class="icon">👥</div>
+                        <span class="stat-number">5,000+</span>
+                        <div class="stat-label">Professional Traders</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">📊</div>
+                        <span class="stat-number">95%</span>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">🎓</div>
+                        <span class="stat-number">50+</span>
+                        <div class="stat-label">Expert Mentors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">⚡</div>
+                        <span class="stat-number">24/7</span>
+                        <div class="stat-label">Premium Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>💬</span>
+                    Success Stories
+                </div>
+                <h2 class="section-title">What Our Elite Traders Say</h2>
+                <p class="section-subtitle">Real results from professionals who transformed their trading careers with our advanced programs</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate">
+                    <p class="testimonial-text">"Yash Ventures transformed my approach to professional trading. The advanced strategies and institutional-level mentorship helped me achieve consistent profitability within months. Outstanding program!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <div class="author-name">Rajesh Kumar</div>
+                            <div class="author-title">Senior Software Architect, Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate">
+                    <p class="testimonial-text">"The Advanced Professional course exceeded all expectations. The sophisticated strategies and professional tools provided have made trading my primary income source. Exceptional value and results."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div>
+                            <div class="author-name">Priya Sharma</div>
+                            <div class="author-title">Investment Consultant, Delhi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate">
+                    <p class="testimonial-text">"As a finance professional, I was impressed by the institutional-grade content and advanced methodologies. The Elite program has significantly enhanced my trading performance and career prospects."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AV</div>
+                        <div>
+                            <div class="author-name">Amit Verma</div>
+                            <div class="author-title">Portfolio Manager, Bangalore</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-badge">
+                    <span>📞</span>
+                    Get Started Today
+                </div>
+                <h2>Ready to Begin Your Professional Trading Journey?</h2>
+                <p>Connect with our expert team and start your transformation to professional trading excellence</p>
+                
+                <!-- Enhanced Contact Methods -->
+                <div class="contact-methods">
+                    <div class="contact-method animate reveal-left">
+                        <span class="contact-method-icon">📱</span>
+                        <h3>WhatsApp Consultation</h3>
+                        <p>Get instant responses and personalized course recommendations from our trading experts</p>
+                        <a href="https://wa.me/919975316073?text=Hi%20Yash%20Ventures!%20I'm%20interested%20in%20your%20professional%20trading%20courses.%20Please%20provide%20more%20details%20about:%0A%0A-%20Course%20curriculum%20and%20structure%0A-%20Enrollment%20process%0A-%20Available%20schedules%0A-%20Support%20and%20mentorship%20details%0A%0AThank%20you!" 
+                           class="contact-btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-btn-icon">📱</span>
+                            WhatsApp Expert
+                        </a>
+                    </div>
+                    
+                    <div class="contact-method animate reveal-right">
+                        <span class="contact-method-icon">📧</span>
+                        <h3>Professional Email Support</h3>
+                        <p>Send detailed inquiries and receive comprehensive information about our trading programs</p>
+                        <a href="mailto:support@yashventures.co?subject=Professional%20Trading%20Course%20Inquiry%20-%20Detailed%20Information%20Request&body=Dear%20Yash%20Ventures%20Team,%0A%0AI%20hope%20this%20email%20finds%20you%20well.%20I%20am%20writing%20to%20inquire%20about%20your%20professional%20trading%20and%20investment%20courses.%0A%0ASpecifically,%20I%20would%20like%20to%20know%20more%20about:%0A%0A1.%20Course%20Curriculum%20and%20Structure:%0A%20%20%20-%20Detailed%20syllabus%20for%20each%20program%0A%20%20%20-%20Duration%20and%20schedule%20options%0A%20%20%20-%20Learning%20methodology%20and%20approach%0A%0A2.%20Enrollment%20Process:%0A%20%20%20-%20Prerequisites%20or%20requirements%0A%20%20%20-%20Registration%20procedure%0A%20%20%20-%20Payment%20options%20and%20installment%20plans%0A%0A3.%20Support%20and%20Mentorship:%0A%20%20%20-%20Level%20of%20personal%20guidance%20provided%0A%20%20%20-%20Access%20to%20expert%20mentors%0A%20%20%20-%20Post-course%20support%20duration%0A%0A4.%20Course%20Materials%20and%20Resources:%0A%20%20%20-%20Trading%20tools%20and%20software%20access%0A%20%20%20-%20Study%20materials%20and%20resources%0A%20%20%20-%20Live%20trading%20sessions%20and%20practice%0A%0A5.%20Success%20Metrics%20and%20Outcomes:%0A%20%20%20-%20Track%20record%20and%20success%20stories%0A%20%20%20-%20Expected%20learning%20outcomes%0A%20%20%20-%20Career%20advancement%20opportunities%0A%0AAdditionally,%20I%20would%20appreciate%20information%20about:%0A-%20Any%20current%20promotions%20or%20early%20bird%20discounts%0A-%20Batch%20schedules%20and%20availability%0A-%20Demo%20sessions%20or%20trial%20classes%0A%0AMy%20background:%0A-%20Current%20experience%20level:%20[Please%20specify:%20Beginner/Intermediate/Advanced]%0A-%20Professional%20background:%20[Please%20specify]%0A-%20Trading%20goals:%20[Please%20specify]%0A%0AI%20am%20genuinely%20interested%20in%20advancing%20my%20trading%20skills%20and%20believe%20that%20Yash%20Ventures%20can%20provide%20the%20professional%20guidance%20I%20need.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20your%20detailed%20response.%0A%0ABest%20regards,%0A[Your%20Name]%0A[Your%20Phone%20Number]%0A[Your%20Location]" 
+                           class="contact-btn email-btn">
+                            <span class="contact-btn-icon">📧</span>
+                            Email Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="social-content">
+                <h2 class="social-title">Connect With Our Community</h2>
+                <p class="social-subtitle">Follow us across platforms for market insights, trading tips, and exclusive content</p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.yashventures.co" 
+                       class="social-link social-youtube glow-on-hover" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Subscribe to our YouTube channel for trading tutorials and market analysis">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a2.936 2.936 0 0 0-2.063-2.085C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.435.555A2.936 2.936 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.936 2.936 0 0 0 2.063 2.085c1.93.555 9.435.555 9.435.555s7.505 0 9.435-.555a2.936 2.936 0 0 0 2.063-2.085C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://telegram.yashventures.co" 
+                       class="social-link social-telegram glow-on-hover" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Join our Telegram community for real-time market updates and discussions">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://instagram.yashventures.co" 
+                       class="social-link social-instagram glow-on-hover" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Follow us on Instagram for daily trading insights and behind-the-scenes content">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://discord.yashventures.co" 
+                       class="social-link social-discord glow-on-hover" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Join our Discord server for live trading discussions and community support">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://yashventures.co" 
+                       class="social-link social-website glow-on-hover" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Visit our main website for comprehensive trading resources and tools">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>⚡ Yash Ventures</h3>
+                    <p>Empowering professional traders and investors with institutional-grade education, advanced strategies, and proven methodologies for sustainable financial success.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📚 Programs</h3>
+                    <p><a href="#courses">Foundation Trader Program</a></p>
+                    <p><a href="#courses">Advanced Professional Course</a></p>
+                    <p><a href="#courses">Elite Investor Mastery</a></p>
+                    <p><a href="#about">Professional Mentorship</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>🌐 Connect With Us</h3>
+                    <p><a href="https://youtube.yashventures.co" target="_blank">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; fill: #FF0000;" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a2.936 2.936 0 0 0-2.063-2.085C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.435.555A2.936 2.936 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.936 2.936 0 0 0 2.063 2.085c1.93.555 9.435.555 9.435.555s7.505 0 9.435-.555a2.936 2.936 0 0 0 2.063-2.085C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        YouTube Channel
+                    </a></p>
+                    <p><a href="https://telegram.yashventures.co" target="_blank">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; fill: #0088CC;" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        Telegram Community
+                    </a></p>
+                    <p><a href="https://instagram.yashventures.co" target="_blank">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; fill: #E4405F;" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        Instagram Updates
+                    </a></p>
+                    <p><a href="https://discord.yashventures.co" target="_blank">
+                        <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; fill: #5865F2;" viewBox="0 0 24 24">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                        Discord Server
+                    </a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>📞 Contact Information</h3>
+                    <p>📱 +91 99753 16073</p>
+                    <p>📧 support@yashventures.co</p>
+                    <p>🌐 <a href="https://yashventures.co" target="_blank">yashventures.co</a></p>
+                    <p>⏰ 24/7 Professional Support</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yash Ventures. All rights reserved. | Professional Trading Solutions & Investment Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Loading Screen
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1200);
+        });
+
+        // Professional Header Scroll Effect
+        const header = document.getElementById('header');
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', function() {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Hide header on scroll down, show on scroll up
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Smooth Scrolling Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Advanced Intersection Observer for Animations
+        const animationObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.opacity = '1';
+                    }, index * 100);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate').forEach((element, index) => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(40px)';
+            element.style.transition = `all 0.8s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s`;
+            animationObserver.observe(element);
+        });
+
+        // Professional Button Interactions
+        document.querySelectorAll('.btn, .contact-btn').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = this.classList.contains('btn-primary') ? 
+                    'translateY(-2px) scale(1.02)' : 'translateY(-2px)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+            
+            button.addEventListener('click', function(e) {
+                // Professional click feedback
+                this.style.transform = 'translateY(0) scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-2px) scale(1.02)';
+                }, 100);
+            });
+        });
+
+        // Course Card Professional Hover Effects
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('featured')) {
+                    this.style.transform = 'translateY(-8px)';
+                    this.style.boxShadow = 'var(--shadow-xl), var(--shadow-glow)';
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('featured')) {
+                    this.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Professional Statistics Counter Animation
+        function animateCounter(element, target) {
+            const increment = target / 100;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toString().includes('+') ? target : target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toString() + 
+                        (target.toString().includes('+') ? '+' : '');
+                }
+            }, 20);
+        }
+
+        // Trigger counter animations when stats come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.stat-number');
+                    numbers.forEach(num => {
+                        const text = num.textContent;
+                        let target;
+                        
+                        if (text.includes('5,000+')) target = '5,000+';
+                        else if (text.includes('95%')) target = '95%';
+                        else if (text.includes('50+')) target = '50+';
+                        else if (text.includes('24/7')) target = '24/7';
+                        
+                        num.textContent = target;
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.querySelectorAll('.stats-grid').forEach(stats => {
+            statsObserver.observe(stats);
+        });
+
+        // Professional Contact Button Enhancement
+        document.querySelectorAll('.contact-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Add professional click tracking
+                const btnType = this.classList.contains('whatsapp-btn') ? 'WhatsApp' : 'Email';
+                console.log(`Professional ${btnType} contact initiated`);
+            });
+        });
+
+        // Enhanced Mobile Menu (for future implementation)
+        function toggleMobileMenu() {
+            // Professional mobile menu toggle
+            console.log('Mobile menu toggled');
+        }
+
+        // Professional Page Visibility API
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                document.title = 'Come back! - Yash Ventures';
+            } else {
+                document.title = 'Yash Ventures - Professional Trading & Investment Solutions';
+            }
+        });
+
+        // Professional Error Handling
+        window.addEventListener('error', function(e) {
+            console.log('Professional error handling:', e.message);
+        });
+
+        // Professional Performance Monitoring
+        window.addEventListener('load', function() {
+            const loadTime = performance.now();
+            console.log(`Professional site loaded in ${Math.round(loadTime)}ms`);
+        });
+    </script>
+</body>
+</html>
